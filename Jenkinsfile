@@ -34,5 +34,19 @@ pipeline {
         }
       }
     }
+
+    stage("Deployment"){
+    when{
+      branch "master"
+    }
+    steps{
+      build job: 'deploy-app', parameters: [string(name: 'ARTIFACT_ID', value: "${env.ARTIFACT_ID}")], wait: false
+
+      }
+    }
+
+
+
+
   }
 }

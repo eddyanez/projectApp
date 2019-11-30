@@ -1,0 +1,22 @@
+{
+  "name" : "devops4",
+  "version": "1.0.0",
+  "description":"",
+  "main":"index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "directories":{
+    "test": "test"
+  },
+  "autor":"",
+  "license":"ISC",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-router":"^7.4.0"
+  },
+  "devDependencies":{
+    "mocha": "^5.2.0"
+  }
+
+}

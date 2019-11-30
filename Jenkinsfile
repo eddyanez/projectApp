@@ -21,5 +21,13 @@ pipeline {
         }
       }
     }
+
+    stage("Extract test results"){
+      steps{
+        script{
+          cobertura coberturaReportFile: 'path-to/coverage.xml'
+        }
+      }
+    }
   }
 }

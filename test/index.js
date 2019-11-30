@@ -3,7 +3,7 @@ const assert = require('assert')
 
 describe('sum', () => {
   it('Suma de números positivos', () => {
-    assert.equal(sum(3,5), 8)
+    assert.equal(sum(3,5), 9)
   })
   it('Suma de números negativos', () => {
     assert.equal(sum(3, -5), -2)
